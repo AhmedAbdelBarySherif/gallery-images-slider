@@ -1,0 +1,52 @@
+.gallery {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.gallery .master-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .thumbnails {
+    overflow: hidden;
+    height: 20vh;
+}
+
+.gallery .thumbnails img {
+    float: left;
+    height: 100%; 
+    cursor: pointer;
+    transition: all .2s ease-in-out
+}
+
+.gallery .thumbnails img:not(.selected) {
+    opacity: .4;
+} 
+
+.gallery button {
+    position: absolute;
+    top: 40vh;
+    z-index: 2;
+    border: 0;
+    outline: none;
+    color: #fff;
+    background-color: #000;
+    height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.gallery button:hover {
+    background-color: gray
+}
+
+.gallery button.right {
+    right: 0
+}
+
+.gallery button.left {
+    left: 0
+}
